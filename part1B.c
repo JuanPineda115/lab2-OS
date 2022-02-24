@@ -7,9 +7,10 @@
 ------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <sys/types.h>
+#include <unistd.h>
 int main()
 {
-for (i = 0; i < 4; i++)
+for (int i = 0; i < 4; i++)
     fork();
     printf("hello\n");
     return 0;

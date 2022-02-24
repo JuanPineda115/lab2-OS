@@ -1,6 +1,15 @@
+/*---------------------------------------------------------------------------
+* UNIVERSIDAD DEL VALLE DE GUATEMALA
+* DEPARTAMENTO DE CIENCIA DE LA COMPUTACIÓN
+* Curso: Sistemas Operativos
+* Laboratorio 2
+* Descripción: Creacion de 4 forks
+------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <time.h>
-
+#include <unistd.h>
+#include <sys/types.h>
+#include<sys/wait.h>
 int main()
 {
 	pid_t padre, hijo, nieto;
@@ -42,5 +51,4 @@ int main()
 	
 	}
 	return 0;
-	
 }
