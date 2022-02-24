@@ -3,19 +3,14 @@
 * DEPARTAMENTO DE CIENCIA DE LA COMPUTACIÓN
 * Curso: Sistemas Operativos
 * Laboratorio 2
-* Descripción: Uso de forks dentro de un ciclo for
+* Descripción: Creacion de forks en un for
 ------------------------------------------------------------------------------*/
-#include <iostream>
-#include <sys/wait.h>
-#include <sys/types.h> 
-#include <unistd.h>
-
-
-int main() 
-{ 
-    fork(); 
-    fork(); 
-    //fork(); 
-    printf("Hello World!\n"); 
-    return 0; 
-} 
+#include <stdio.h>
+#include <sys/types.h>
+int main()
+{
+for (i = 0; i < 4; i++)
+    fork();
+    printf("hello\n");
+    return 0;
+}
